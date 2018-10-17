@@ -1,0 +1,68 @@
+var todos = [];
+
+function Todo(name) {
+    this.name = name;
+    this.completed = false;
+}
+
+
+// Add Todo
+function addTodoWithName(name) {
+    var t = new Todo(name);
+    console.log(t);
+    todos.push(t);
+    setData();
+}
+
+//Get Todo
+function getTodoAtIndex(index) {
+    return todos[index];
+}
+
+//Set Data to local storage
+function setData(){
+    var str = JSON.stringify(todos);
+    localStorage.setItem("Text", str);
+}
+
+//Get data from local storage
+function getData(){
+    var str = localStorage.getItem("Text");
+    todos = JSON.parse(str);
+    if(!todos){
+        todos = [];
+    }
+}
+
+//initialize app
+getData();
+listTodos();
+
+//List Todos
+function listTodos() {
+    var html = "";
+    for (var i in todos) {
+        var todo = todos[i];
+        var name = todo.name;
+        var completed = todo.completed;
+        html += "<li>" + name + " " + completed + "</li>";
+    }
+    // document.getElementById("list").innerHTML = html;
+    $("#u-list").html(html);
+}
+
+//Submit button to add todo
+$("#add-todo-click").submit(function(event) {
+    event.preventDefault(); // Prevents the default behaviour
+
+    var name = $("#todo-name").val();
+    //Validiate...
+    addTodoWithName(name);
+    listTodos();
+});
+
+
+//Remove Todo
+function removeTodoAtIndex(index) {
+    todos.splice(index, 1);
+}
