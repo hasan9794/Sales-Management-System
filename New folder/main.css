@@ -121,3 +121,21 @@ button {
    padding: 5px;
    border-radius: 5px;
 }
+
+.add-button {
+    padding: 9px;
+    width: 16%;
+}
+button:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+    color: #5995DA;
+    border: 1px solid #5995DA;
+}
+.add-text {
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #5995DA;
+}
