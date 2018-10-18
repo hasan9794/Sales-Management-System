@@ -119,6 +119,7 @@ function editList() {
     inputbox.value = temp;
     span.style.display = "none";
     list.insertBefore(inputbox, divButtons);
+    inputbox.focus();
 
     inputbox.addEventListener("keyup", function (event) {
         event.preventDefault();
@@ -126,6 +127,13 @@ function editList() {
             span.innerHTML = inputbox.value;
             inputbox.style.display = "none";
             span.style.display = "";
+            editTodoAtIndex(index, inputbox.value);
         }
     })
+}
+
+function editTodoAtIndex(index, newText) {
+    // getData();
+    todos[index].name = newText;
+    setData();
 }
