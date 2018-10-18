@@ -100,9 +100,24 @@ body {
 .item li{
     display: flex;
     justify-content: space-between;
+    margin-top:8px;
+    margin-right: 15px;
 }
 
 .input-box{
     background: #f4f4f4;
     /* border: none; */
+}
+
+.del {
+    margin-left: 5px;
+}
+
+button {
+   background: #5995DA;
+   color: #f2f2f2;
+   border: none;
+   outline: none;
+   padding: 5px;
+   border-radius: 5px;
 }
