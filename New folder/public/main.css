@@ -1,0 +1,146 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.user-image img{
+    border-radius: 50%;
+}
+
+.menu-container {
+    /* background-color: rgb(231, 76, 60); */
+    background-color: #5995DA;
+    padding: 0px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    /* border: 1px solid #fff; */
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu .time {
+    color: #ffffff;
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.links{
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logout {
+    margin-left: 20px;
+}
+
+.header-container{
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    width: 900px;
+    height: 80PX;
+    display: flex;
+    
+    align-items: center;
+}
+    
+
+.header .admin-panel {
+    font-size: 48px;
+    font-family: 'Cabin Sketch', cursive;
+    color: #080808;
+}
+
+.header .manage {
+    font-family: cursive;
+    font-size: 16px;
+}
+
+.item-container{
+    display: flex;
+    justify-content: center;
+}
+
+.item .add-box{
+    width: 500px;
+}
+
+.item{
+    margin-top: 20px;
+
+}
+
+.item .item-heading{
+    text-align: center;
+    background-color: #5d8ffc;
+    color: #fff;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.item li{
+    display: flex;
+    justify-content: space-between;
+    margin-top:8px;
+    margin-right: 15px;
+}
+
+.input-box{
+    background: #f4f4f4;
+    /* border: none; */
+}
+
+.del {
+    margin-left: 5px;
+}
+
+button {
+   background: #5d8ffc;;
+   color: #f2f2f2;
+   border: none;
+   outline: none;
+   padding: 5px;
+   border-radius: 4px;
+   transition: 0.3s;
+}
+
+.add-button {
+    padding: 8.5px;
+    width: 16%;
+}
+button:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+}
+.add-text {
+    padding: 8px;
+    width: 80%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #5d8ffc;
+}
+
+#time {
+    color: white;
+}

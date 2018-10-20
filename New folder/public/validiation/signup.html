@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Signup Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <div class="main-dv" id="login-div">
+        <img src="..\images\salespro-2.png" alt="">
+        <div class="form-group">
+            <label id="label-email" for="">Please enter a valid email address</label>
+            <input id="email" type="email" name="email" placeholder="Email...">
+        </div>
+        
+        <div class="form-group">
+            <label id="label-username" for="">Please enter a username</label>
+            <input id="username" type="text" placeholder="Username...">
+        </div>
+        
+        <div class="form-group">
+            <label id="label-password" for="">Please enter a password</label>
+            <input id="password" type="password"  placeholder="Password...">
+        </div>  
+        <button onclick="store()" id="sign-up" >Sign Up</button>
+        <label >Already have an account? <a href="./login.html">Sign in</a></label>
+    </div>
+    
+    
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDyFJIAh8KahyrbsolrcEe6fYulmu-KWDk",
+    authDomain: "newproject-9731e.firebaseapp.com",
+    databaseURL: "https://newproject-9731e.firebaseio.com",
+    projectId: "newproject-9731e",
+    storageBucket: "newproject-9731e.appspot.com",
+    messagingSenderId: "810772182727"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+    <script src="main.js"></script>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+</body>
+
+</html>
